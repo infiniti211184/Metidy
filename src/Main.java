@@ -9,7 +9,7 @@ public class Main {
     }
     public static String generatInstal(int os, int year) {
         if (!(os == 0 || os == 1)) {
-            throw new RuntimeException("устройство не поддерживает");
+            throw new RuntimeException("устройство не поддерживает"); }
             var currentYear = LocalDate.now().getYear();
             String versionMessage = year < currentYear ? "установите облегченную версию" : "";
             String osMessage = os == 0 ? "iOS" : "android";
@@ -25,5 +25,6 @@ public class Main {
             return result;
         }
     }
-}
+
+
 
