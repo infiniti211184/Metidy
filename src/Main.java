@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println(isLeap(2022) ? "високосный год" : "не високосный год");
@@ -20,14 +22,15 @@ public class Main {
             return String.format("Установите %s версию приложения по ссылке %s", versionMessage, osMessage);
         }
     }
-        public static int calculateShipping ( int distance){
-            int start = 20;
-            int finish = 40;
-            int result = 1;
-            if (distance >= start) {
-                result = (Math.abs((distance - start) / finish) + 2);
-            }
-            return result;
+
+    public static int calculateShipping(int distance) {
+        int start = 20;
+        int finish = 40;
+        int result = 1;
+        if (distance >= start) {
+            result = (Math.abs((distance - start) / finish) + 2);
         }
+        return result;
     }
+}
 
